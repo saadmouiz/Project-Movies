@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: "Almarai", sans-serif;
+}
+
+.color-body {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+.nav-style {
+  height: 90px;
+  width: 100%;
+  background-color: #333; /* Couleur plus élégante */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 72px;
+  width: 150px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Limiter la largeur du champ de recherche */
+  margin: 0 auto;
+}
+
+.search input {
+  height: 45px;
+  width: 100%;
+  padding-left: 40px; /* Espacement pour l'icône */
+  border-radius: 25px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search input:focus {
+  border-color: #ff6347; /* Couleur focus attrayante */
+  box-shadow: none;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: #888;
+}
+
+.search input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+.search input:hover {
+  border-color: #ff6347;
+}
+
+.card {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  height: 375px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05); /* Animation au survol */
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
+}
+
+.overlay__text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.font {
+  font-family: "Almarai", sans-serif;
+}
+
+.color {
+  color: #ff6347;
+  background-color: #ff6347;
+}
+
+.card-detalis, .card-story {
+  height: 370px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+}
+
+.img-movie {
+  height: 360px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-text-details {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 49px;
+}
+
+.card-text-title {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 49px;
+}
+.activeN{
+  background-color: #333;
+}
